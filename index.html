@@ -1,18 +1,144 @@
-
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>My Website</title>
-    <link rel="stylesheet" href="./style.css">
-    <link rel="icon" href="./favicon.ico" type="image/x-icon">
-  </head>
-  <body>
-    <main>
-        <h1>Welcome to My Website</h1>  
-    </main>
-	<script src="index.js"></script>
-  </body>
+    
+    <meta content="Embed Title" property="og:title" />
+    <meta content="Site Description" property="og:description" />
+    <meta content="https://embed.com/this-is-the-site-url" property="og:url" />
+    <meta content="https://embed.com/embedimage.png" property="og:image" />
+    <meta content="#43B581" data-react-helmet="true" name="theme-color" />
+    <title>Studio Kružítko</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,300;0,700;1,100;1,300;1,700&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@0;1&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+</head>
+<body>
+
+<div class="custom-cursor"></div>
+
+<!--HEADER-->
+<section class="header">
+    <h1 class="topTitle">
+        Studio <br>
+        <span class="primaryColor">Kružítko</span>
+    </h1>
+    <img src="obrazky/temp_star.png">
+</section>
+
+<span class='line'></span>
+
+<div class="scrolling-container">
+    <div class="scrolling-text">
+        <p>Banners • Logos • Book Covers • Anything else •&nbsp;</p>
+        <p>Banners • Logos • Book Covers • Anything else •&nbsp;</p>
+        <p>Banners • Logos • Book Covers • Anything else •&nbsp;</p>
+        <p>Banners • Logos • Book Covers • Anything else •&nbsp;</p>
+    </div>
+</div>
+
+<span class='line'></span>
+
+<section class="best-designs">
+    <h1 class="section-header"> What I Do </h1>
+    <!--<p class="section-subtext">Lorem ipsum odor amet, consectetuer adipiscing elit.</p>-->
+    <section class="best-designs-flex">
+        <section class="carousel">
+            <div class="slides">
+                <img src="obrazky/obr_1.jpg" id="cursor-enlarge" onclick="openImageModal(this, 2)" class="slide active">
+                <img src="obrazky/obr_2.jpg" id="cursor-enlarge" onclick="openImageModal(this, 2)" class="slide">
+                <img src="obrazky/obr_3.jpg" id="cursor-enlarge" onclick="openImageModal(this, 2)" class="slide">
+            </div>
+            <div class="progress-bar">
+                <div class="progress"></div>
+            </div>
+        </section>
+        <div class="carousel-text">
+            <h1 class="section-header"> What I do </h1>
+            <p class="section-subtext">I really like Lorem ipsum odor amet, consectetuer adipiscing elit. And I can promise I will always deliver you Lorem ipsum odor amet, consectetuer adipiscing elit.I really like Lorem ipsum odor amet, consectetuer adipiscing elit. I really like Lorem ipsum odor amet, consectetuer adipiscing elit. I really like Lorem ipsum odor amet, consectetuer adipiscing elit. </p>
+        </div>
+    </section>
+</section>
+
+<section id="portfolio-webdesign">
+    <h1 class="section-header"> Banner Design </h1>
+    <p class="section-subtext">Lorem ipsum odor amet, consectetuer adipiscing elit.</p>
+    <div class="grid-big" id="grid">
+       <img src="obrazky/obr_12.jpg" id="cursor-enlarge" onclick="openImageModal(this, 2)">
+       <img src="obrazky/obr_12.jpg" id="cursor-enlarge" onclick="openImageModal(this, 2)">
+       <img src="obrazky/obr_12.jpg" id="cursor-enlarge" onclick="openImageModal(this, 2)">
+       <img src="obrazky/obr_12.jpg" id="cursor-enlarge" onclick="openImageModal(this, 2)">
+       <img src="obrazky/obr_12.jpg" id="cursor-enlarge" onclick="openImageModal(this, 2)">
+       <img src="obrazky/obr_12.jpg" id="cursor-enlarge" onclick="openImageModal(this, 2)">
+    </div>
+</section>
+
+<section id="portfolio-webdesign">
+    <h1 class="section-header"> Book Design </h1>
+    <p class="section-subtext">Lorem ipsum odor amet, consectetuer adipiscing elit.</p>
+    <div class="grid-medium" id="grid">
+        <img src="obrazky/book.jpg" id="cursor-enlarge" onclick="openImageModal(this, .8)">
+        <img src="obrazky/book.jpg" id="cursor-enlarge" onclick="openImageModal(this, .8)">
+        <img src="obrazky/book.jpg" id="cursor-enlarge" onclick="openImageModal(this, .8)">
+        <img src="obrazky/book.jpg" id="cursor-enlarge" onclick="openImageModal(this, .8)">
+        <img src="obrazky/book.jpg" id="cursor-enlarge" onclick="openImageModal(this, .8)">
+        <img src="obrazky/book.jpg" id="cursor-enlarge" onclick="openImageModal(this, .8)">
+        <img src="obrazky/book.jpg" id="cursor-enlarge" onclick="openImageModal(this, .8)">
+        <img src="obrazky/book.jpg" id="cursor-enlarge" onclick="openImageModal(this, .8)">
+    </div>
+</section>
+
+<section id="portfolio-loremdesign">
+    <h1 class="section-header"> Square Design </h1>
+    <p class="section-subtext">Lorem ipsum odor amet, consectetuer adipiscing elit.</p>
+    <div class="grid-small" id="grid">
+       <img src="obrazky/cert.png" id="cursor-enlarge" onclick="openImageModal(this, 2)">
+       <img src="obrazky/cert.png" id="cursor-enlarge" onclick="openImageModal(this, 1)">
+       <img src="obrazky/cert.png" id="cursor-enlarge" onclick="openImageModal(this, 1)">
+       <img src="obrazky/cert.png" id="cursor-enlarge" onclick="openImageModal(this, 1)">
+       <img src="obrazky/cert.png" id="cursor-enlarge" onclick="openImageModal(this, 1)">
+       <img src="obrazky/cert.png" id="cursor-enlarge" onclick="openImageModal(this, 1)">
+       <img src="obrazky/cert.png" id="cursor-enlarge" onclick="openImageModal(this, 1)">
+       <img src="obrazky/cert.png" id="cursor-enlarge" onclick="openImageModal(this, 1)">
+       <img src="obrazky/cert.png" id="cursor-enlarge" onclick="openImageModal(this, 1)">
+       <img src="obrazky/cert.png" id="cursor-enlarge" onclick="openImageModal(this, 1)">
+    </div>
+</section>
+
+<div class="overlay"></div>
+<div class="image-modal">
+    <button class="close-btn">&times;</button>
+    <img class="modal-image" src="">
+</div>
+
+<span class='line' style="padding-top: 2rem; border-bottom: 1px solid var(--primary);"></span>
+
+<!--FOOTER-->
+<footer class= "footer">
+    <section class= "socials">
+        <a href="https://www.example.com/" target="_blank" class= "social-link" style="--hoverColor: #5865F2;">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 127.14 96.36"><path fill="currentColor" d="M107.7,8.07A105.15,105.15,0,0,0,81.47,0a72.06,72.06,0,0,0-3.36,6.83A97.68,97.68,0,0,0,49,6.83,72.37,72.37,0,0,0,45.64,0,105.89,105.89,0,0,0,19.39,8.09C2.79,32.65-1.71,56.6.54,80.21h0A105.73,105.73,0,0,0,32.71,96.36,77.7,77.7,0,0,0,39.6,85.25a68.42,68.42,0,0,1-10.85-5.18c.91-.66,1.8-1.34,2.66-2a75.57,75.57,0,0,0,64.32,0c.87.71,1.76,1.39,2.66,2a68.68,68.68,0,0,1-10.87,5.19,77,77,0,0,0,6.89,11.1A105.25,105.25,0,0,0,126.6,80.22h0C129.24,52.84,122.09,29.11,107.7,8.07ZM42.45,65.69C36.18,65.69,31,60,31,53s5-12.74,11.43-12.74S54,46,53.89,53,48.84,65.69,42.45,65.69Zm42.24,0C78.41,65.69,73.25,60,73.25,53s5-12.74,11.44-12.74S96.23,46,96.12,53,91.08,65.69,84.69,65.69Z"/></svg>
+        </a>
+        <a href="https://www.example.com/" target="_blank" class= "social-link" style="--hoverColor: #FF0000;">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 71.412065 50"><g id="g5" transform="scale(.58824)"><path id="path7" fill="currentColor" fill-opacity="1" d="M35.705078 0S13.35386.0001149 7.765625 1.4707031c-3 .8235294-5.4713925 3.2946921-6.2949219 6.3535157C.0001149 13.412454 0 25 0 25s.0001149 11.64637 1.4707031 17.175781c.8235294 3.058824 3.2360984 5.471393 6.2949219 6.294922C13.412684 50.000115 35.705078 50 35.705078 50s22.353171-.000115 27.941406-1.470703c3.058824-.82353 5.471393-3.236098 6.294922-6.294922 1.470588-5.588235 1.470703-17.175781 1.470703-17.175781s.058709-11.64614-1.470703-17.2343752c-.823529-3.0588236-3.236098-5.4713925-6.294922-6.2949219C58.058249-.00011488 35.705078 0 35.705078 0zm-7.117187 14.294922L47.175781 25l-18.58789 10.705078V14.294922z" transform="scale(1.7)"/></g></svg>
+        </a>
+    </section>
+
+    <p>© Copyright <span id="spanYear"></span> Studio Kružítko. All Rights Reserved.</p> <br>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
 </html>
